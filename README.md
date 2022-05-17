@@ -1,15 +1,18 @@
 # Solr PHP Client
 
-A purely PHP library for indexing and searching documents against an Apache Solr installation.
+This is a client used to retrieve data from the Solr Search Engine.<br />
 
-This project was formerly maintained at [http://code.google.com/p/solr-php-client](http://code.google.com/p/solr-php-client). Previous issues and downloads are still available for viewing there.
+Here is my demo video: https://www.youtube.com/watch?v=-15nM6ETu7A<br />
 
-## Need Help?
+## Frontend functionalities
+1. Search words in the search bar. Get results from the Solr server<br />
+2. Sort by Lucene(default) or Pagerank algorithm<br />
+3. Autocomplete by given characters<br />
+4. Spellcorrect and guess when the result is empty<br />
 
-Try starting with the [FAQ](https://github.com/PTCInc/solr-php-client/wiki/FAQ) and [Example Usage](https://github.com/PTCInc/solr-php-client/wiki/Example-Usage).
-
-Also, feel free to search and ask questions on the google mailing list: [php-solr-client@googlegroups.com](mailto:php-solr-client@googlegroups.com) / [Group Page](https://groups.google.com/forum/?fromgroups#!forum/php-solr-client)
-
-## License
-
-Code is released under a 3-Clause BSD license, see [COPYING](https://github.com/PTCInc/solr-php-client/blob/master/COPYING) for full text.
+## Backend workflow
+1. Extract links from 16400 htmls from the new york times website<br />
+2. Indexing pages with Tika<br />
+3. Compute pagerank with networkx library<br />
+4. Get search request from client use Lucene or alternative Pagerank method<br />
+6. Compare Lucene results with Pagerank result to evaluate the overlap<br />
