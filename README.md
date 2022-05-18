@@ -1,6 +1,6 @@
-# Solr PHP Client
+# Search Engine Client
 
-This is a client used to retrieve data from the Solr Search Engine.<br />
+This is a PHP client used to retrieve data from the Solr Search Engine.<br />
 
 Here is my demo video: https://www.youtube.com/watch?v=-15nM6ETu7A<br />
 
